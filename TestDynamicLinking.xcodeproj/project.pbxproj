@@ -12,8 +12,19 @@
 		E5039C002369837C00F20E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5039BFF2369837C00F20E49 /* Assets.xcassets */; };
 		E5039C032369837C00F20E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5039C022369837C00F20E49 /* Preview Assets.xcassets */; };
 		E5039C062369837C00F20E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5039C042369837C00F20E49 /* LaunchScreen.storyboard */; };
-		E5039C1F236983BA00F20E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5039BFD2369837800F20E49 /* ContentView.swift */; };
+		E5039C1F236983BA00F20E49 /* JourneyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5039BFD2369837800F20E49 /* JourneyMessage.swift */; };
+		E5039C5D2369882C00F20E49 /* ExampleJourneyIntegration.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5039C5C2369881800F20E49 /* ExampleJourneyIntegration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5039C5B2369881800F20E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5039C352369863D00F20E49 /* Wrappers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5039C502369877B00F20E49;
+			remoteInfo = ExampleJourneyIntegration;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E5039C202369858E00F20E49 /* CopyFiles */ = {
@@ -22,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E5039C5D2369882C00F20E49 /* ExampleJourneyIntegration.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,13 +43,14 @@
 		E5039BF62369837800F20E49 /* TestDynamicLinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDynamicLinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5039BF92369837800F20E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5039BFB2369837800F20E49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5039BFD2369837800F20E49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5039BFD2369837800F20E49 /* JourneyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMessage.swift; sourceTree = "<group>"; };
 		E5039BFF2369837C00F20E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5039C022369837C00F20E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5039C052369837C00F20E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5039C072369837C00F20E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5039C12236983B500F20E49 /* ExampleJourney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExampleJourney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5039C15236983B500F20E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5039C352369863D00F20E49 /* Wrappers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Wrappers.xcodeproj; path = Wrappers/Wrappers.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 		E5039BED2369837800F20E49 = {
 			isa = PBXGroup;
 			children = (
+				E5039C352369863D00F20E49 /* Wrappers.xcodeproj */,
 				E5039BF82369837800F20E49 /* TestDynamicLinking */,
 				E5039C13236983B500F20E49 /* ExampleJourney */,
 				E5039BF72369837800F20E49 /* Products */,
@@ -93,10 +107,18 @@
 		E5039C13236983B500F20E49 /* ExampleJourney */ = {
 			isa = PBXGroup;
 			children = (
-				E5039BFD2369837800F20E49 /* ContentView.swift */,
+				E5039BFD2369837800F20E49 /* JourneyMessage.swift */,
 				E5039C15236983B500F20E49 /* Info.plist */,
 			);
 			path = ExampleJourney;
+			sourceTree = "<group>";
+		};
+		E5039C362369863D00F20E49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5039C5C2369881800F20E49 /* ExampleJourneyIntegration.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +198,12 @@
 			mainGroup = E5039BED2369837800F20E49;
 			productRefGroup = E5039BF72369837800F20E49 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E5039C362369863D00F20E49 /* Products */;
+					ProjectRef = E5039C352369863D00F20E49 /* Wrappers.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E5039BF52369837800F20E49 /* TestDynamicLinking */,
@@ -183,6 +211,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E5039C5C2369881800F20E49 /* ExampleJourneyIntegration.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExampleJourneyIntegration.framework;
+			remoteRef = E5039C5B2369881800F20E49 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E5039BF42369837800F20E49 /* Resources */ = {
@@ -218,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5039C1F236983BA00F20E49 /* ContentView.swift in Sources */,
+				E5039C1F236983BA00F20E49 /* JourneyMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

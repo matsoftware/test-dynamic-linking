@@ -8,30 +8,22 @@
 
 import UIKit
 import SwiftUI
-
-#if canImport(ExampleJourney)
-import ExampleJourney
-// Create the SwiftUI view that provides the window contents.
-let contentView = ContentView()
-#else
-// Create the SwiftUI view that provides the window contents.
-let contentView = ContentView()
+import ExampleJourneyIntegration
 
 public struct ContentView: View {
+
+    public var message: String = "Default"
 
     public init() {}
 
     public var body: some View {
-        Text("Example empty")
+        Text(message)
     }
 }
-
-#endif
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -41,6 +33,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
+
+            var contentView = ContentView()
+            contentView.message = ExampleJourneyIntegration.message
+
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
