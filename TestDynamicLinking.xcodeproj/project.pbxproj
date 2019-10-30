@@ -12,31 +12,17 @@
 		E5039C002369837C00F20E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5039BFF2369837C00F20E49 /* Assets.xcassets */; };
 		E5039C032369837C00F20E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5039C022369837C00F20E49 /* Preview Assets.xcassets */; };
 		E5039C062369837C00F20E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5039C042369837C00F20E49 /* LaunchScreen.storyboard */; };
-		E5039C19236983B500F20E49 /* ExampleJourney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5039C12236983B500F20E49 /* ExampleJourney.framework */; };
-		E5039C1A236983B500F20E49 /* ExampleJourney.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5039C12236983B500F20E49 /* ExampleJourney.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E5039C1F236983BA00F20E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5039BFD2369837800F20E49 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E5039C17236983B500F20E49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5039BEE2369837800F20E49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5039C11236983B500F20E49;
-			remoteInfo = ExampleJourney;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		E5039C1E236983B500F20E49 /* Embed Frameworks */ = {
+		E5039C202369858E00F20E49 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E5039C1A236983B500F20E49 /* ExampleJourney.framework in Embed Frameworks */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -55,14 +41,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E5039BF32369837800F20E49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5039C19236983B500F20E49 /* ExampleJourney.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E5039C0F236983B500F20E49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,14 +117,12 @@
 			buildConfigurationList = E5039C0A2369837C00F20E49 /* Build configuration list for PBXNativeTarget "TestDynamicLinking" */;
 			buildPhases = (
 				E5039BF22369837800F20E49 /* Sources */,
-				E5039BF32369837800F20E49 /* Frameworks */,
 				E5039BF42369837800F20E49 /* Resources */,
-				E5039C1E236983B500F20E49 /* Embed Frameworks */,
+				E5039C202369858E00F20E49 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5039C18236983B500F20E49 /* PBXTargetDependency */,
 			);
 			name = TestDynamicLinking;
 			productName = TestDynamicLinking;
@@ -247,14 +223,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E5039C18236983B500F20E49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5039C11236983B500F20E49 /* ExampleJourney */;
-			targetProxy = E5039C17236983B500F20E49 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E5039C042369837C00F20E49 /* LaunchScreen.storyboard */ = {
@@ -385,7 +353,6 @@
 		E5039C0B2369837C00F20E49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestDynamicLinking/Preview Content\"";
@@ -406,7 +373,6 @@
 		E5039C0C2369837C00F20E49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestDynamicLinking/Preview Content\"";
