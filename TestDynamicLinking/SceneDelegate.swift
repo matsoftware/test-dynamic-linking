@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import ExampleJourney
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
