@@ -13,3 +13,11 @@ public protocol ExampleMessageProvider {
     var message: String { get }
 
 }
+
+public extension ExampleMessageProvider {
+
+    var message: String {
+        "Inactive"
+    }
+
+}
