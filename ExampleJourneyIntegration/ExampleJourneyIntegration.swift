@@ -8,11 +8,15 @@
 
 import Foundation
 import ExampleJourney
+import protocol CoreModels.ExampleMessageProvider
 
-public struct ExampleJourneyIntegration {
+public struct ExampleJourneyIntegration: ExampleMessageProvider {
 
-    public static var currentMessage: String {
+    public init() {}
+
+    public var message: String {
         JourneyMessage.message
     }
+
 
 }

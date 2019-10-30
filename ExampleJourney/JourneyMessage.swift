@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import UIKit
 
-public struct JourneyMessage {
+public class JourneyMessage {
 
     public static var message: String {
-        "Example JOURNEY"
+
+        let bundle = Bundle.init(for: JourneyMessage.self)
+        
+        guard UIImage(named: "VittoriaEPapi", in: bundle, compatibleWith: nil) != nil else {
+            fatalError("Assets not copied")
+        }
+
+        return "Example JOURNEY"
     }
 
 }

@@ -7,23 +7,23 @@
 //
 
 import Foundation
+import protocol CoreModels.ExampleMessageProvider
 #if canImport(ExampleJourneyIntegration)
 import ExampleJourneyIntegration
-let defaultMessage = ExampleJourneyIntegration.currentMessage
+let defaultMessageProvider: ExampleMessageProvider = ExampleJourneyIntegration()
 #else
-let defaultMessage = "Journey not linked"
+struct InactiveMessageProvider: ExampleMessageProvider {
+    var message: String {
+       "Inactive path"
+    }
+}
+let defaultMessageProvider: ExampleMessageProvider = InactiveMessageProvider()
 #endif
 
 public struct AppLayer {
 
     public static var message: String {
-        defaultMessage
+        defaultMessageProvider.message
     }
-
-}
-
-public protocol ExampleMessage {
-
-    var message: String { get }
 
 }
