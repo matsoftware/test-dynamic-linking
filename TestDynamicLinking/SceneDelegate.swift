@@ -8,11 +8,11 @@
 
 import UIKit
 import SwiftUI
-import ExampleJourneyIntegration
+import Foundation
 
 public struct ContentView: View {
 
-    public var message: String = "Default"
+    public var message: String = AppLayer.message
 
     public init() {}
 
@@ -34,9 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
 
-            var contentView = ContentView()
-            contentView.message = ExampleJourneyIntegration.message
-
+            let contentView = ContentView()
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()

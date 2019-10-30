@@ -3,7 +3,7 @@
    LastUpgradeVersion = "1110"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E5039BF52369837800F20E49"
-               BuildableName = "TestDynamicLinking.app"
-               BlueprintName = "TestDynamicLinking"
+               BlueprintIdentifier = "E5039C11236983B500F20E49"
+               BuildableName = "ExampleJourney.framework"
+               BlueprintName = "ExampleJourney"
                ReferencedContainer = "container:TestDynamicLinking.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E59BF11E2369D97E00681BB0"
-               BuildableName = "TestDynamicLinkingUITests.xctest"
-               BlueprintName = "TestDynamicLinkingUITests"
-               ReferencedContainer = "container:TestDynamicLinking.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E5039BF52369837800F20E49"
-            BuildableName = "TestDynamicLinking.app"
-            BlueprintName = "TestDynamicLinking"
-            ReferencedContainer = "container:TestDynamicLinking.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E5039BF52369837800F20E49"
-            BuildableName = "TestDynamicLinking.app"
-            BlueprintName = "TestDynamicLinking"
+            BlueprintIdentifier = "E5039C11236983B500F20E49"
+            BuildableName = "ExampleJourney.framework"
+            BlueprintName = "ExampleJourney"
             ReferencedContainer = "container:TestDynamicLinking.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
